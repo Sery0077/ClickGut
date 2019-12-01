@@ -26,17 +26,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mAuth = FirebaseAuth.getInstance()
-
-        val user = mAuth.currentUser
-
-        if (user == null) {
-
-            val intent = Intent(this, SignInActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(intent)
-        }
-
         init()
 
         supportFragmentManager
