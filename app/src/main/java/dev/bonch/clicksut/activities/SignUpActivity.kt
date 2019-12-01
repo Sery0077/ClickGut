@@ -34,9 +34,6 @@ class SignUpActivity : AppCompatActivity() {
 
         initViews()
 
-        val test = spinner.selectedItem.toString()
-        Toast.makeText(this, test, Toast.LENGTH_SHORT).show()
-
         signUpBtn.setOnClickListener {
             signUp()
         }

@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AbsListView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -43,17 +45,6 @@ class BoardFragment: Fragment() {
         recyclerView = view.findViewById<RecyclerView>(R.id.boardRecyclerView)
 
         posts = ArrayList<Post>()
-
-        posts.add(Post("asds", "sadas", "fasd"))
-        posts.add(Post("asds", "sadas", ""))
-        posts.add(Post("asds", "sadas", ""))
-        posts.add(Post("asds", "sadas", "sda"))
-        posts.add(Post("asds", "sadas", ""))
-        posts.add(Post("asds", "sadas", ""))
-        posts.add(Post("asds", "sadas", "sda"))
-        posts.add(Post("asds", "sadas", ""))
-        posts.add(Post("asds", "sadas", ""))
-        posts.add(Post("asds", "sadas", "sda"))
 
         recyclerView.adapter = PostAdapter(posts)
         recyclerView.layoutManager = LinearLayoutManager(BoardFragment@context, LinearLayoutManager.VERTICAL, false)

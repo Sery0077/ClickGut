@@ -34,7 +34,6 @@ class AddPostFragment: Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_add_post, container, false)
 
-        titltEt = view.findViewById(R.id.title)
         descrEt = view.findViewById(R.id.description)
         cetSpinner = view.findViewById(R.id.category_spinner)
         publishBtn = view.findViewById(R.id.publish)
@@ -76,15 +75,13 @@ class AddPostFragment: Fragment() {
 
     private fun publish() {
 
-        val title = titltEt.text.toString()
-        val description = descrEt.text.toString()
+        val description = descrEt.text.toString().trim()
 
-        if (description.isNotEmpty() && title.isNotEmpty()) {
+        if (description.isNotEmpty()) {
             dataBase.collection("lesnoe").add(
                 mapOf(
-                    "title" to title,
                     "description" to description,
-                    "author" to user,
+                    "userName" to user,
                     "type" to currentCat
                 )
             )
