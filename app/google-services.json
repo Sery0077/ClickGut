@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "585763552203",
+    "firebase_url": "https://clicksut-af803.firebaseio.com",
+    "project_id": "clicksut-af803",
+    "storage_bucket": "clicksut-af803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585763552203:android:552476317f16f25083d44e",
+        "android_client_info": {
+          "package_name": "dev.bonch.clicksut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585763552203-tr4p4pm645t7bp04a896getanjvlohet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.bonch.clicksut",
+            "certificate_hash": "89021eb59335cf7dd8b859a8f81af551e4908c5a"
+          }
+        },
+        {
+          "client_id": "585763552203-gqlabanfebdl4df0am5d9kb6v33fde7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcuLuQu6sUpxF3_o8bRjkf-xQ6VpWN_Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585763552203-gqlabanfebdl4df0am5d9kb6v33fde7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
