@@ -13,7 +13,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Имя, Фамилия"
+        android:text="Сергей"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18sp"
@@ -37,7 +37,7 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="500dp"
         android:fontFamily="sans-serif"
         android:text="Мои объявления"
         android:textAlignment="center"
@@ -46,7 +46,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -82,9 +82,9 @@
         app:layout_constraintVertical_bias="0.133" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+        android:id="@+id/boardRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="450dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
